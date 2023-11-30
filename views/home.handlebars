@@ -1,3 +1,4 @@
+{{#if tarefas}}
 <main>
     <section class="tarefas">
         {{#each tarefas}}
@@ -18,6 +19,7 @@
                 <button onclick ="excluirTarefa({{this.id}})">
                     <img src="/imagens/x-icon.png" alt="icone de x para excluir uma tarefa">
                 </button>
+
             </form>
         </div>
         {{/each}}
@@ -30,7 +32,7 @@
                 <a href="/completas">Completas</a>
             </div>
 
-            <a href="">Limpar tarefas</a>
+            <a href="/limpartarefas">Limpar tarefas</a>
         </div>
     </section>
 
@@ -40,3 +42,4 @@
         <a href="/completas">Completas</a>
     </section>
 </main>
+{{/if}}
