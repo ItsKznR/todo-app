@@ -46,6 +46,8 @@ app.post('/excluir', (requisicao, resposta) => {
     })
 })
 
+
+// esqueci de 1 commit no video de 1 hr
 app.post('/completar', (requisicao, resposta) => {
     const id = requisicao.body.id
 
